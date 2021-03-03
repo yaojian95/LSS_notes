@@ -1,0 +1,41 @@
+\documentclass[onecolumn]{emulateapj}
+\usepackage[utf8]{inputenc}
+
+\title{LSS notes}
+
+\date{March 2021}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Two point correlation and power spectrum}
+
+$\vec{x} = \vec{x}_1 - \vec{x}_2$,
+$$\int \frac{d^3x_2}{(2\pi)^3} e^{-i(\vec{k}_2 \cdot \vec{x}_2 )} = \int \frac{d^3x_2}{(2\pi)^3} e^{-i \left(\vec{k}_2 \cdot (\vec{x}_1-\vec{x}) \right)}  =  \int \frac{d^3x}{(2\pi)^3} e^{-i \left(\vec{k}_2 \cdot (\vec{x}_1-\vec{x}) \right)} $$
+
+1. $y = x_1 - x_2, \partial y / \partial x_2 = -1$, then why don't we change the sign of the integrate variable, that is from $d^3x_2$ to $d^3(-y)$
+
+2. y is dependent on x1 and x2, why can we treat y and x1 as independent variables here?
+
+
+\section{Evolution of perturbations}
+
+The evolution of a fluid is dictated by three fluid equations. 
+\begin{itemize}
+    \item The $\textbf{continuity equation}$ or energy equation describes the conservation of energy (mass). 
+    \item The $\textbf{Euler equation}$ is the force-law describing the acceleration of the fluid elements as a result of the gravitational force and pressure (gradient) in the fluid.
+    \item The sources for the gravitational field are specified by the $\textbf{Poisson equation}$.
+\end{itemize}
+The prevailing pressure of a medium is obtained through $\textbf{the equation of state}$, specifying the nature of the cosmic fluid.In the following we will introduce these equations. 
+
+We do this in the physical coordinate system r and on the basis of the full physical quantities. These are the density $\bf \rho(r,t)$ at a location r, the corresponding total velocity $\bf u(r,t)$, and total gravitational potential $\bf \Phi(r,t)$ as well as the pressure $\bf P(r,t)$ of the medium.
+
+\citep{adams1995hitchhiker}
+
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}
